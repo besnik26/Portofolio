@@ -98,8 +98,14 @@ body{
 .aboutinfo img {
     border: 2px solid #00b300;
 }
+.contactdivimg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
-.contactdiv img {
+.contactdiv img{
+    
     width: 70px;
     height: auto;
     background-color: white;
@@ -144,7 +150,7 @@ hr{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 50px;
+    padding: 40px;
 }
 .aboutme2{
     
@@ -165,11 +171,14 @@ hr{
 }
 .skillsphoto{
     display: grid;
-    grid-template-columns: repeat( 2, 300px);
+    grid-template-columns: repeat( 2, 280px);
     grid-auto-rows: auto;
     grid-column-gap: 150px;
     grid-row-gap: 80px;
     justify-content: center;
+}
+.skillstext{
+    padding: 30px;
 }
 .skillstext h1{
     color: #00b300;
@@ -180,9 +189,35 @@ hr{
     text-align: center;
 }
 .skillsphoto img{
-    width: 300px;
+    width: 280px;
     height: auto;
     /* border: 2px solid #00b300; */
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projectstext{
+    text-align: center;
+}
+.projectstext h1{
+    color: #00b300;
+}
+.projectstext h3{
+    color: white;
+}
+.projectscontent{
+    /* background-color: purple; */
+    padding: 50px;
+    /* text-decoration: underline; */
+}
+
+.projectscontent h3 a {
+    text-decoration: none;
+    padding: 2px;
+    color: #00b300;
+    border: 1px dotted #00b300;
 }
 
 
@@ -195,8 +230,7 @@ hr{
 
 
 
-
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 750px){
     .navdiv1 a{
         font-size: 15px;
     }
@@ -205,5 +239,86 @@ hr{
         padding: 10px;
         
     }
+    .skillsphoto{
+        display: grid;
+        grid-template-columns: repeat( 1, 250px);
+        grid-auto-rows: auto;
+        grid-column-gap: 150px;
+        grid-row-gap: 80px;
+        justify-content: center;
+    }
+    .skillstext h1{
+        color: #00b300;
+        text-align: center;
+    }
+    .skillstext h3{
+        color: white;
+        text-align: center;
+    }
+    .skillsphoto img{
+        width: 250px;
+        height: auto;
+        /* border: 2px solid #00b300; */
+    }
     
+}
+@media only screen and (max-width: 350px){
+
+    .navdiv1 a{
+        font-size: 11px;
+    }
+    .navdiv2 a{
+        font-size: 11px;
+        padding: 10px;
+        
+    }
+    .about2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+    .about2 img{
+        width: 180px;
+        height: auto;
+        border-radius: 60%;
+        text-align: center;
+        
+        
+        /* background-color: white; */
+    }
+    .skillsphoto{
+        display: grid;
+        grid-template-columns: repeat( 1, 230px);
+        grid-auto-rows: auto;
+        grid-column-gap: 150px;
+        grid-row-gap: 80px;
+        justify-content: center;
+    }
+    .skillstext h1{
+        color: #00b300;
+        text-align: center;
+    }
+    .skillstext h3{
+        color: white;
+        text-align: center;
+    }
+    .skillsphoto img{
+        width: 230px;
+        height: auto;
+        /* border: 2px solid #00b300; */
+    }
+    .contactdiv img{
+    
+        width: 50px;
+        height: auto;
+        background-color: white;
+        border-radius: 100%;
+    }
+    .aboutbutton button{
+        padding: 15px 30px;
+        
+        text-decoration: none;
+        color: black;
+    }
 }
