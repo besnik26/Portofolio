@@ -35,7 +35,7 @@ body{
 .navdiv2{
     padding: 10px;
 }
-.navdiv1:hover{
+.navdiv1 a:hover{
     background-color: rgb(19, 19, 19);
     color: #00b300;
     text-decoration: underline;
