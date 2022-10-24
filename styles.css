@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+html {
+    scroll-behavior: smooth;
+  }
 *{
     margin: 0;
     padding: 0;
@@ -217,9 +220,19 @@ hr{
     text-decoration: none;
     padding: 2px;
     color: #00b300;
-    border: 1px dotted #00b300;
+    /* border: 1px dotted #00b300; */
 }
-
+.seemoree{
+    text-align: center;
+    border-style: none;
+    padding: 40px;
+    
+}
+.seemoree a{
+    
+    border-style: none;
+    text-decoration: none;
+}
 
 
 
